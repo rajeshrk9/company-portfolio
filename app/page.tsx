@@ -1,12 +1,16 @@
 import { Cpu, Wrench, Code2, Phone, Mail, MapPin, ArrowRight, Star, Check } from 'lucide-react'
+import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-slate-50">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b-2 border-gray-100">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="font-bold text-2xl text-blue-600">RK ITrade</div>
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <Image src="/logo.png" alt="RK ITrade Group" width={48} height={48} className="h-12 w-auto" />
+            <div className="font-bold text-xl text-gray-900 hidden sm:block">RK ITrade</div>
+          </div>
           <div className="hidden md:flex gap-8">
             <a href="#services" className="text-gray-700 font-medium hover:text-blue-600 transition-colors">Services</a>
             <a href="#about" className="text-gray-700 font-medium hover:text-blue-600 transition-colors">About</a>
@@ -16,40 +20,62 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6 bg-gradient-to-b from-blue-50 to-white relative overflow-hidden">
-        {/* Decorative geometric shapes */}
-        <div className="absolute top-20 right-10 w-72 h-72 bg-blue-500/5 rounded-full -z-10"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-500/5 rounded-full -z-10"></div>
+      <section className="pt-32 pb-20 px-6 relative overflow-hidden">
+        {/* Decorative gradient background */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-blue-200/20 to-transparent rounded-full -z-10 blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-emerald-200/20 to-transparent rounded-full -z-10 blur-3xl"></div>
         
-        <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-6xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight tracking-tight">
-            Powering Your Technology
-          </h1>
-          <p className="text-2xl md:text-3xl text-blue-600 font-semibold mb-8">
-            Empowering Your Business
-          </p>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-12 leading-relaxed">
-            Professional IT services and support for computer repair, hardware maintenance, and software solutions. We&apos;re your trusted technology partner in Biratnagar.
-          </p>
-          <button className="bg-blue-600 text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-blue-700 hover:scale-105 transition-all duration-200 shadow-none">
-            Get Started
-          </button>
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Left Content */}
+            <div className="text-left">
+              <div className="mb-8">
+                <Image src="/logo.png" alt="RK ITrade Group Logo" width={120} height={120} className="h-32 w-auto" />
+              </div>
+              <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4 leading-tight" style={{ fontFamily: 'var(--font-poppins)' }}>
+                Powering Your Technology
+              </h1>
+              <p className="text-xl md:text-2xl text-blue-600 font-semibold mb-6" style={{ fontFamily: 'var(--font-poppins)' }}>
+                Empowering Your Business
+              </p>
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-lg">
+                Professional IT services and support for computer repair, hardware maintenance, and software solutions. Your trusted technology partner in Biratnagar.
+              </p>
+              <button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-xl hover:scale-105 transition-all duration-300 hover:to-blue-800">
+                Get Started
+              </button>
+            </div>
+            
+            {/* Right Image */}
+            <div className="hidden md:block relative">
+              <div className="bg-gradient-to-br from-blue-100 to-emerald-100 rounded-2xl overflow-hidden shadow-2xl">
+                <Image 
+                  src="/it-services.png" 
+                  alt="IT Services Team" 
+                  width={500} 
+                  height={500} 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-200/20 rounded-full blur-2xl -z-10"></div>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-24 px-6 bg-gray-50">
+      <section id="services" className="py-24 px-6 bg-white/50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-5xl font-bold text-gray-900 mb-4 text-center">Our Services</h2>
+          <h2 className="text-5xl font-bold text-gray-900 mb-4 text-center" style={{ fontFamily: 'var(--font-poppins)' }}>Our Services</h2>
           <p className="text-center text-gray-600 text-lg mb-16">Comprehensive IT solutions tailored to your business needs</p>
           
           <div className="grid md:grid-cols-3 gap-6">
             {/* Service Card 1 */}
-            <div className="group bg-white p-8 rounded-lg cursor-pointer transition-all duration-200 hover:scale-105 border-2 border-transparent hover:border-blue-600">
-              <div className="bg-white w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-200 border-2 border-blue-600">
+            <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl cursor-pointer transition-all duration-300 hover:scale-105 border border-blue-200 hover:border-blue-500 hover:shadow-lg">
+              <div className="bg-gradient-to-br from-blue-100 to-blue-50 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 border border-blue-300">
                 <Cpu className="w-8 h-8 text-blue-600" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Computer Repair</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3" style={{ fontFamily: 'var(--font-poppins)' }}>Computer Repair</h3>
               <p className="text-gray-600 leading-relaxed mb-6">
                 Fast and reliable repair services for desktops and laptops. We diagnose and fix hardware and software issues quickly.
               </p>
@@ -59,11 +85,11 @@ export default function Home() {
             </div>
 
             {/* Service Card 2 */}
-            <div className="group bg-white p-8 rounded-lg cursor-pointer transition-all duration-200 hover:scale-105 border-2 border-transparent hover:border-emerald-600">
-              <div className="bg-white w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-200 border-2 border-emerald-600">
+            <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl cursor-pointer transition-all duration-300 hover:scale-105 border border-emerald-200 hover:border-emerald-500 hover:shadow-lg">
+              <div className="bg-gradient-to-br from-emerald-100 to-emerald-50 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 border border-emerald-300">
                 <Wrench className="w-8 h-8 text-emerald-600" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Hardware Maintenance</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3" style={{ fontFamily: 'var(--font-poppins)' }}>Hardware Maintenance</h3>
               <p className="text-gray-600 leading-relaxed mb-6">
                 Preventive maintenance services to keep your equipment running smoothly. Regular checks and updates included.
               </p>
@@ -73,11 +99,11 @@ export default function Home() {
             </div>
 
             {/* Service Card 3 */}
-            <div className="group bg-white p-8 rounded-lg cursor-pointer transition-all duration-200 hover:scale-105 border-2 border-transparent hover:border-amber-600">
-              <div className="bg-white w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-200 border-2 border-amber-600">
+            <div className="group bg-white/80 backdrop-blur-sm p-8 rounded-xl cursor-pointer transition-all duration-300 hover:scale-105 border border-amber-200 hover:border-amber-500 hover:shadow-lg">
+              <div className="bg-gradient-to-br from-amber-100 to-amber-50 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 border border-amber-300">
                 <Code2 className="w-8 h-8 text-amber-600" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Software Support</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3" style={{ fontFamily: 'var(--font-poppins)' }}>Software Support</h3>
               <p className="text-gray-600 leading-relaxed mb-6">
                 Expert software installation, troubleshooting, and support. From OS updates to specialized applications.
               </p>
@@ -90,9 +116,10 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-24 px-6 bg-blue-600 text-white">
+      <section className="py-24 px-6 bg-gradient-to-r from-blue-600 to-blue-700 text-white relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl -z-10"></div>
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-5xl font-bold mb-16 text-center">Why Choose RK ITrade Group?</h2>
+          <h2 className="text-5xl font-bold mb-16 text-center" style={{ fontFamily: 'var(--font-poppins)' }}>Why Choose RK ITrade Group?</h2>
           
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-6">
@@ -135,11 +162,11 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-24 px-6 bg-white">
+      <section id="about" className="py-24 px-6 bg-slate-50/50">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-5xl font-bold text-gray-900 mb-8">About RK ITrade Group</h2>
+              <h2 className="text-5xl font-bold text-gray-900 mb-8" style={{ fontFamily: 'var(--font-poppins)' }}>About RK ITrade Group</h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
                 Based in Biratnagar, RK ITrade Group is a dedicated IT services provider committed to delivering exceptional technical support and solutions to businesses and individuals.
               </p>
@@ -173,38 +200,38 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-24 px-6 bg-gray-50">
+      <section id="contact" className="py-24 px-6 bg-white/50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-5xl font-bold text-gray-900 mb-4 text-center">Get In Touch</h2>
+          <h2 className="text-5xl font-bold text-gray-900 mb-4 text-center" style={{ fontFamily: 'var(--font-poppins)' }}>Get In Touch</h2>
           <p className="text-center text-gray-600 text-lg mb-16">We&apos;d love to help with your IT needs</p>
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Contact Card 1 */}
-            <div className="bg-white p-8 rounded-lg text-center hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <div className="bg-white/80 backdrop-blur-sm p-8 rounded-xl text-center hover:shadow-lg transition-all duration-300 border border-blue-100">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-50 rounded-lg flex items-center justify-center mx-auto mb-4 border border-blue-200">
                 <Phone className="w-8 h-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Phone</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2" style={{ fontFamily: 'var(--font-poppins)' }}>Phone</h3>
               <p className="text-gray-600">Contact us for immediate assistance</p>
               <p className="text-blue-600 font-bold mt-4 text-lg">+977 (xxx) xxx-xxxx</p>
             </div>
 
             {/* Contact Card 2 */}
-            <div className="bg-white p-8 rounded-lg text-center hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 bg-emerald-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <div className="bg-white/80 backdrop-blur-sm p-8 rounded-xl text-center hover:shadow-lg transition-all duration-300 border border-emerald-100">
+              <div className="w-16 h-16 bg-gradient-to-br from-emerald-100 to-emerald-50 rounded-lg flex items-center justify-center mx-auto mb-4 border border-emerald-200">
                 <Mail className="w-8 h-8 text-emerald-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Email</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2" style={{ fontFamily: 'var(--font-poppins)' }}>Email</h3>
               <p className="text-gray-600">Drop us a message anytime</p>
               <p className="text-emerald-600 font-bold mt-4 text-lg">rajeshkhadka7007@gmail.com</p>
             </div>
 
             {/* Contact Card 3 */}
-            <div className="bg-white p-8 rounded-lg text-center hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 bg-amber-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <div className="bg-white/80 backdrop-blur-sm p-8 rounded-xl text-center hover:shadow-lg transition-all duration-300 border border-amber-100">
+              <div className="w-16 h-16 bg-gradient-to-br from-amber-100 to-amber-50 rounded-lg flex items-center justify-center mx-auto mb-4 border border-amber-200">
                 <MapPin className="w-8 h-8 text-amber-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Location</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2" style={{ fontFamily: 'var(--font-poppins)' }}>Location</h3>
               <p className="text-gray-600">Visit us at our office</p>
               <p className="text-amber-600 font-bold mt-4 text-lg">Biratnagar</p>
             </div>
@@ -213,11 +240,11 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12 px-6">
+      <footer className="bg-gradient-to-b from-gray-900 to-gray-950 text-white py-12 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <h4 className="text-2xl font-bold text-blue-400 mb-4">RK ITrade Group</h4>
+              <h4 className="text-2xl font-bold text-blue-400 mb-4" style={{ fontFamily: 'var(--font-poppins)' }}>RK ITrade Group</h4>
               <p className="text-gray-400">Powering Your Technology, Empowering Your Business</p>
             </div>
             <div>
