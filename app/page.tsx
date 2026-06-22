@@ -213,7 +213,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2" style={{ fontFamily: 'var(--font-poppins)' }}>Phone</h3>
               <p className="text-gray-600">Contact us for immediate assistance</p>
-              <p className="text-blue-600 font-bold mt-4 text-lg">+977 (xxx) xxx-xxxx</p>
+              <p className="text-blue-600 font-bold mt-4 text-lg">+977 9819083222</p>
             </div>
 
             {/* Contact Card 2 */}
