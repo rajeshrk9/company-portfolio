@@ -14,6 +14,7 @@ export default function Home() {
           <div className="hidden md:flex gap-8">
             <a href="#services" className="text-gray-700 font-medium hover:text-blue-600 transition-colors">Services</a>
             <a href="#about" className="text-gray-700 font-medium hover:text-blue-600 transition-colors">About</a>
+            <a href="#customer-details" className="text-gray-700 font-medium hover:text-blue-600 transition-colors">Service Request</a>
             <a href="#contact" className="text-gray-700 font-medium hover:text-blue-600 transition-colors">Contact</a>
           </div>
         </div>
@@ -199,6 +200,30 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Customer Details Section */}
+      <section id="customer-details" className="py-24 px-6 bg-slate-50/50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-5xl font-bold text-gray-900 mb-4 text-center" style={{ fontFamily: 'var(--font-poppins)' }}>Service Request Form</h2>
+          <p className="text-center text-gray-600 text-lg mb-12">Fill out the form below to request our IT services. We&apos;ll get back to you shortly.</p>
+          
+          <div className="bg-white/80 backdrop-blur-sm rounded-2xl border border-blue-100 overflow-hidden shadow-lg">
+            <div className="w-full h-[900px] overflow-y-auto">
+              <iframe 
+                src="https://docs.google.com/forms/d/e/1FAIpQLSf9FmhjmCeClqH6b-A-tZiYPKilMoEOtw1naugvWhAqMzWjtA/viewform?embedded=true" 
+                width="100%" 
+                height="900" 
+                frameBorder="0" 
+                marginHeight="0" 
+                marginWidth="0"
+                className="w-full"
+              >
+                Loading…
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="py-24 px-6 bg-white/50">
         <div className="max-w-7xl mx-auto">
@@ -259,8 +284,8 @@ export default function Home() {
               <h5 className="font-bold mb-4">Company</h5>
               <ul className="space-y-2 text-gray-400">
                 <li><a href="#about" className="hover:text-blue-400 transition-colors">About Us</a></li>
+                <li><a href="#customer-details" className="hover:text-blue-400 transition-colors">Service Request</a></li>
                 <li><a href="#contact" className="hover:text-blue-400 transition-colors">Contact</a></li>
-                <li><a href="#" className="hover:text-blue-400 transition-colors">Privacy Policy</a></li>
               </ul>
             </div>
           </div>
