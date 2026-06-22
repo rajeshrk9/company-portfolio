@@ -12,8 +12,8 @@ export default function Home() {
             <div className="font-bold text-xl text-gray-900 hidden sm:block">RK ITrade</div>
           </div>
           <div className="hidden md:flex gap-8">
-            <a href="#services" className="text-gray-700 font-medium hover:text-blue-600 transition-colors">Services</a>
             <a href="#about" className="text-gray-700 font-medium hover:text-blue-600 transition-colors">About</a>
+            <a href="#services" className="text-gray-700 font-medium hover:text-blue-600 transition-colors">Services</a>
             <a href="#customer-details" className="text-gray-700 font-medium hover:text-blue-600 transition-colors">Service Request</a>
             <a href="#contact" className="text-gray-700 font-medium hover:text-blue-600 transition-colors">Contact</a>
           </div>
@@ -64,6 +64,47 @@ export default function Home() {
         </div>
       </section>
 
+      {/* About Section - MOVED FIRST */}
+      <section id="about" className="py-24 px-6 bg-slate-50/50">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-5xl font-bold text-gray-900 mb-8" style={{ fontFamily: 'var(--font-poppins)' }}>About RK ITrade Group</h2>
+              <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                RK ITrade Group is a premier IT services provider based in Biratnagar, Nepal. We specialize in comprehensive technology solutions for businesses and individuals, helping them overcome IT challenges and maximize their technological efficiency.
+              </p>
+              <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                Founded with a vision to make quality IT services accessible and affordable, we&apos;ve grown to become a trusted partner for over 500+ clients. Our team of certified technicians brings 15+ years of combined experience in computer repair, hardware maintenance, and software solutions.
+              </p>
+              <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                We believe in building long-term relationships with our clients through exceptional service, transparent communication, and reliable technical support. Our mission is simple: to keep your technology running smoothly so you can focus on growing your business.
+              </p>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Whether you&apos;re a startup, small business, or established enterprise, RK ITrade Group is your go-to partner for all your technology needs.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-2 gap-6">
+              {[
+                { icon: Cpu, value: '500+', label: 'Happy Clients' },
+                { icon: Star, value: '98%', label: 'Satisfaction Rate' },
+                { icon: Wrench, value: '15+', label: 'Years Experience' },
+                { icon: Phone, value: '24/7', label: 'Support Available' },
+              ].map((item, idx) => {
+                const Icon = item.icon
+                return (
+                  <div key={idx} className="bg-blue-50 p-6 rounded-lg text-center border border-blue-200 hover:border-blue-400 transition-colors">
+                    <Icon className="w-12 h-12 text-blue-600 mx-auto mb-3" />
+                    <div className="text-3xl font-bold text-gray-900 mb-2">{item.value}</div>
+                    <div className="text-gray-600 font-medium text-sm">{item.label}</div>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section id="services" className="py-24 px-6 bg-white/50">
         <div className="max-w-7xl mx-auto">
@@ -77,9 +118,12 @@ export default function Home() {
                 <Cpu className="w-8 h-8 text-blue-600" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3" style={{ fontFamily: 'var(--font-poppins)' }}>Computer Repair</h3>
-              <p className="text-gray-600 leading-relaxed mb-6">
-                Fast and reliable repair services for desktops and laptops. We diagnose and fix hardware and software issues quickly.
-              </p>
+              <ul className="text-gray-600 leading-relaxed mb-6 space-y-2 text-sm">
+                <li>• Desktop & Laptop Diagnosis</li>
+                <li>• Motherboard & CPU Repair</li>
+                <li>• Screen & Display Replacement</li>
+                <li>• Data Recovery Services</li>
+              </ul>
               <div className="flex items-center text-blue-600 font-semibold">
                 Learn More <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" />
               </div>
@@ -91,9 +135,12 @@ export default function Home() {
                 <Wrench className="w-8 h-8 text-emerald-600" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3" style={{ fontFamily: 'var(--font-poppins)' }}>Hardware Maintenance</h3>
-              <p className="text-gray-600 leading-relaxed mb-6">
-                Preventive maintenance services to keep your equipment running smoothly. Regular checks and updates included.
-              </p>
+              <ul className="text-gray-600 leading-relaxed mb-6 space-y-2 text-sm">
+                <li>• Regular System Maintenance</li>
+                <li>• Cleaning & Dust Removal</li>
+                <li>• Hard Drive & SSD Upgrades</li>
+                <li>• Preventive Care Programs</li>
+              </ul>
               <div className="flex items-center text-emerald-600 font-semibold">
                 Learn More <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" />
               </div>
@@ -105,9 +152,12 @@ export default function Home() {
                 <Code2 className="w-8 h-8 text-amber-600" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3" style={{ fontFamily: 'var(--font-poppins)' }}>Software Support</h3>
-              <p className="text-gray-600 leading-relaxed mb-6">
-                Expert software installation, troubleshooting, and support. From OS updates to specialized applications.
-              </p>
+              <ul className="text-gray-600 leading-relaxed mb-6 space-y-2 text-sm">
+                <li>• OS Installation & Setup</li>
+                <li>• Software Troubleshooting</li>
+                <li>• Antivirus & Security Setup</li>
+                <li>• System Optimization</li>
+              </ul>
               <div className="flex items-center text-amber-600 font-semibold">
                 Learn More <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" />
               </div>
@@ -125,9 +175,9 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-6">
               {[
-                { title: 'Expert Technicians', desc: 'Highly trained and certified IT professionals' },
-                { title: 'Quick Response', desc: 'Fast turnaround on all repair and maintenance tasks' },
-                { title: '24/7 Support', desc: 'Always available when you need technical assistance' },
+                { title: 'Expert Technicians', desc: 'Certified professionals with extensive experience' },
+                { title: 'Quick Response Time', desc: 'Average 2-hour response to service requests' },
+                { title: '24/7 Support', desc: 'Round-the-clock availability for emergencies' },
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-4">
                   <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
@@ -143,9 +193,9 @@ export default function Home() {
 
             <div className="space-y-6">
               {[
-                { title: 'Affordable Pricing', desc: 'Competitive rates without compromising quality' },
-                { title: 'Warranty Included', desc: 'All services backed by our quality guarantee' },
-                { title: 'On-Site Service', desc: 'We come to you for convenient support' },
+                { title: 'Affordable Pricing', desc: 'Competitive rates for all budgets' },
+                { title: 'Quality Guarantee', desc: '6-month warranty on all repairs' },
+                { title: 'On-Site Service', desc: 'Free home or office visits available' },
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-4">
                   <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
@@ -157,44 +207,6 @@ export default function Home() {
                   </div>
                 </div>
               ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* About Section */}
-      <section id="about" className="py-24 px-6 bg-slate-50/50">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-5xl font-bold text-gray-900 mb-8" style={{ fontFamily: 'var(--font-poppins)' }}>About RK ITrade Group</h2>
-              <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                Based in Biratnagar, RK ITrade Group is a dedicated IT services provider committed to delivering exceptional technical support and solutions to businesses and individuals.
-              </p>
-              <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                With years of experience in computer repair, hardware maintenance, and software support, we&apos;ve built a reputation for reliability, expertise, and customer satisfaction.
-              </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                Our mission is simple: to keep your technology running smoothly so you can focus on what matters most—your business.
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-2 gap-6">
-              {[
-                { icon: Cpu, value: '500+', label: 'Systems Repaired' },
-                { icon: Star, value: '98%', label: 'Satisfaction Rate' },
-                { icon: Wrench, value: '15+', label: 'Years Experience' },
-                { icon: Phone, value: '24/7', label: 'Support Available' },
-              ].map((item, idx) => {
-                const Icon = item.icon
-                return (
-                  <div key={idx} className="bg-blue-50 p-6 rounded-lg text-center">
-                    <Icon className="w-12 h-12 text-blue-600 mx-auto mb-3" />
-                    <div className="text-3xl font-bold text-gray-900 mb-2">{item.value}</div>
-                    <div className="text-gray-600 font-medium">{item.label}</div>
-                  </div>
-                )
-              })}
             </div>
           </div>
         </div>
