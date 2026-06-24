@@ -1,8 +1,9 @@
 'use client'
 
 import { useState } from 'react'
-import { ArrowLeft, ChevronRight } from 'lucide-react'
+import { ChevronRight } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const menuItems = [
   {
@@ -122,12 +123,16 @@ export default function ServiceRequestForm() {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 hover:text-blue-600 transition-colors">
-            <ArrowLeft className="w-5 h-5" />
-            <span className="font-semibold text-gray-900">Back</span>
+          <Link href="/" className="flex items-center gap-3">
+            <Image src="/logo.png" alt="RK ITrade Group" width={48} height={48} className="h-12 w-auto" />
+            <div className="font-bold text-xl text-gray-900 hidden sm:block">RK ITrade</div>
           </Link>
-          <div className="font-bold text-xl text-gray-900">Service Portal</div>
-          <div className="w-20"></div>
+          <div className="hidden md:flex gap-8">
+            <a href="#about" className="text-gray-700 font-medium hover:text-blue-600 transition-colors">About</a>
+            <a href="#services" className="text-gray-700 font-medium hover:text-blue-600 transition-colors">Services</a>
+            <a href="/service-request" className="text-blue-600 font-medium">Service Request</a>
+            <a href="#contact" className="text-gray-700 font-medium hover:text-blue-600 transition-colors">Contact</a>
+          </div>
         </div>
       </nav>
 
