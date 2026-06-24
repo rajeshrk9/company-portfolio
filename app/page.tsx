@@ -15,6 +15,7 @@ export default function Home() {
             <a href="#services" className="text-gray-700 font-medium hover:text-blue-600 transition-colors">Services</a>
             <a href="#about" className="text-gray-700 font-medium hover:text-blue-600 transition-colors">About</a>
             <a href="#contact" className="text-gray-700 font-medium hover:text-blue-600 transition-colors">Contact</a>
+            <a href="/service-request" className="text-gray-700 font-medium hover:text-blue-600 transition-colors">Service Request</a>
           </div>
         </div>
       </nav>
@@ -41,9 +42,9 @@ export default function Home() {
               <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-lg">
                 Professional IT services and support for computer repair, hardware maintenance, and software solutions. Your trusted technology partner in Biratnagar.
               </p>
-              <button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-xl hover:scale-105 transition-all duration-300 hover:to-blue-800">
+              <a href="/service-request" className="inline-block bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-xl hover:scale-105 transition-all duration-300 hover:to-blue-800">
                 Get Started
-              </button>
+              </a>
             </div>
             
             {/* Right Image */}
@@ -260,7 +261,7 @@ export default function Home() {
               <ul className="space-y-2 text-gray-400">
                 <li><a href="#about" className="hover:text-blue-400 transition-colors">About Us</a></li>
                 <li><a href="#contact" className="hover:text-blue-400 transition-colors">Contact</a></li>
-                <li><a href="#" className="hover:text-blue-400 transition-colors">Privacy Policy</a></li>
+                <li><a href="/service-request" className="hover:text-blue-400 transition-colors">Service Request</a></li>
               </ul>
             </div>
           </div>
