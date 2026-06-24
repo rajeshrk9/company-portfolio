@@ -8,8 +8,8 @@ export default function Home() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <Image src="/logo.png" alt="RK ITrade Group" width={48} height={48} className="h-12 w-auto" />
-            <div className="font-bold text-xl text-gray-900 hidden sm:block">RK ITrade</div>
+            <Image src="/logo.png" alt="Kabita Trade Group" width={48} height={48} className="h-12 w-auto" />
+            <div className="font-bold text-xl text-gray-900 hidden sm:block">Kabita Trade</div>
           </div>
           <div className="hidden md:flex gap-8">
             <a href="#about" className="text-gray-700 font-medium hover:text-blue-600 transition-colors">About</a>
@@ -31,7 +31,7 @@ export default function Home() {
             {/* Left Content */}
             <div className="text-left">
               <div className="mb-8">
-                <Image src="/logo.png" alt="RK ITrade Group Logo" width={120} height={120} className="h-32 w-auto" />
+                <Image src="/logo.png" alt="Kabita Trade Group Logo" width={120} height={120} className="h-32 w-auto" />
               </div>
               <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4 leading-tight" style={{ fontFamily: 'var(--font-poppins)' }}>
                 Powering Your Technology
@@ -69,9 +69,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-5xl font-bold text-gray-900 mb-8" style={{ fontFamily: 'var(--font-poppins)' }}>About RK ITrade Group</h2>
+              <h2 className="text-5xl font-bold text-gray-900 mb-8" style={{ fontFamily: 'var(--font-poppins)' }}>About Kabita Trade Group</h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                RK ITrade Group is a premier IT services provider based in Biratnagar, Nepal. We specialize in comprehensive technology solutions for businesses and individuals, helping them overcome IT challenges and maximize their technological efficiency.
+                Kabita Trade Group is a premier IT services provider based in Biratnagar, Nepal. We specialize in comprehensive technology solutions for businesses and individuals, helping them overcome IT challenges and maximize their technological efficiency.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
                 Founded with a vision to make quality IT services accessible and affordable, we&apos;ve grown to become a trusted partner for over 500+ clients. Our team of certified technicians brings 15+ years of combined experience in computer repair, hardware maintenance, and software solutions.
@@ -80,7 +80,7 @@ export default function Home() {
                 We believe in building long-term relationships with our clients through exceptional service, transparent communication, and reliable technical support. Our mission is simple: to keep your technology running smoothly so you can focus on growing your business.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Whether you&apos;re a startup, small business, or established enterprise, RK ITrade Group is your go-to partner for all your technology needs.
+                Whether you&apos;re a startup, small business, or established enterprise, Kabita Trade Group is your go-to partner for all your technology needs.
               </p>
             </div>
             
@@ -170,7 +170,7 @@ export default function Home() {
       <section className="py-24 px-6 bg-gradient-to-r from-blue-600 to-blue-700 text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl -z-10"></div>
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-5xl font-bold mb-16 text-center" style={{ fontFamily: 'var(--font-poppins)' }}>Why Choose RK ITrade Group?</h2>
+          <h2 className="text-5xl font-bold mb-16 text-center" style={{ fontFamily: 'var(--font-poppins)' }}>Why Choose Kabita Trade Group?</h2>
           
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-6">
@@ -260,7 +260,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2" style={{ fontFamily: 'var(--font-poppins)' }}>Email</h3>
               <p className="text-gray-600">Drop us a message anytime</p>
-              <p className="text-emerald-600 font-bold mt-4 text-lg">rajeshkhadka7007@gmail.com</p>
+              <p className="text-emerald-600 font-bold mt-4 text-lg">kabitatrade@gmail.com</p>
             </div>
 
             {/* Contact Card 3 */}
@@ -281,7 +281,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <h4 className="text-2xl font-bold text-blue-400 mb-4" style={{ fontFamily: 'var(--font-poppins)' }}>RK ITrade Group</h4>
+              <h4 className="text-2xl font-bold text-blue-400 mb-4" style={{ fontFamily: 'var(--font-poppins)' }}>Kabita Trade Group</h4>
               <p className="text-gray-400">Powering Your Technology, Empowering Your Business</p>
             </div>
             <div>
@@ -302,7 +302,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 RK ITrade Group. All rights reserved. Based in Biratnagar</p>
+            <p>&copy; 2024 Kabita Trade Group. All rights reserved. Based in Biratnagar</p>
           </div>
         </div>
       </footer>

@@ -16,7 +16,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'RK ITrade Group - IT Services & Support',
+  title: 'Kabita Trade Group - IT Services & Support',
   description: 'Professional IT services including computer repair, hardware maintenance, and software support. Powering Your Technology, Empowering Your Business.',
   generator: 'v0.app',
   icons: {
