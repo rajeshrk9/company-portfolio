@@ -8,8 +8,8 @@ export default function Home() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <Image src="/logo.png" alt="Kabita Trade Group" width={48} height={48} className="h-12 w-auto" />
-            <div className="font-bold text-xl text-gray-900 hidden sm:block">Kabita Trade</div>
+            <Image src="/kabita-logo.png" alt="Kabita Trade Group" width={48} height={48} className="h-12 w-auto" />
+            <div className="font-bold text-xl text-gray-900 hidden sm:block">Kabita trade group</div>
           </div>
           <div className="hidden md:flex gap-8">
             <a href="#about" className="text-gray-700 font-medium hover:text-blue-600 transition-colors">About</a>
@@ -31,7 +31,7 @@ export default function Home() {
             {/* Left Content */}
             <div className="text-left">
               <div className="mb-8">
-                <Image src="/logo.png" alt="Kabita Trade Group Logo" width={120} height={120} className="h-32 w-auto" priority />
+                <Image src="/kabita-logo.png" alt="Kabita Trade Group Logo" width={120} height={120} className="h-32 w-auto" priority />
               </div>
               <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4 leading-tight" style={{ fontFamily: 'var(--font-poppins)' }}>
                 Powering Your Technology
@@ -101,6 +101,60 @@ export default function Home() {
                   </div>
                 )
               })}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Shop Gallery Section */}
+      <section className="py-24 px-6 bg-white/50">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-5xl font-bold text-gray-900 mb-4 text-center" style={{ fontFamily: 'var(--font-poppins)' }}>Our Shop</h2>
+          <p className="text-center text-gray-600 text-lg mb-16">Visit Kabita Trade Group at Sahid Stadium front area, Biratnagar</p>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Shop Image 1 */}
+            <div className="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 border border-blue-100">
+              <Image 
+                src="/shop-1.jpg" 
+                alt="Kabita Trade Group Shop Front" 
+                width={500} 
+                height={400}
+                className="w-full h-80 object-cover"
+              />
+            </div>
+
+            {/* Shop Image 2 */}
+            <div className="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 border border-blue-100">
+              <Image 
+                src="/shop-2.jpg" 
+                alt="Shop Products Display" 
+                width={500} 
+                height={400}
+                className="w-full h-80 object-cover"
+              />
+            </div>
+
+            {/* Shop Image 3 */}
+            <div className="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 border border-blue-100">
+              <Image 
+                src="/shop-3.jpg" 
+                alt="Shop Interior and Workspace" 
+                width={500} 
+                height={400}
+                className="w-full h-80 object-cover"
+              />
+            </div>
+
+            {/* Shop Image 4 */}
+            <div className="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 border border-blue-100">
+              <Image 
+                src="/shop-4.jpg" 
+                alt="Product Inventory" 
+                width={500} 
+                height={400}
+                className="w-full h-80 object-cover"
+              />
             </div>
           </div>
         </div>
