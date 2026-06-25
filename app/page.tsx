@@ -31,7 +31,7 @@ export default function Home() {
             {/* Left Content */}
             <div className="text-left">
               <div className="mb-8">
-                <Image src="/logo.png" alt="Kabita Trade Group Logo" width={120} height={120} className="h-32 w-auto" />
+                <Image src="/logo.png" alt="Kabita Trade Group Logo" width={120} height={120} className="h-32 w-auto" priority />
               </div>
               <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4 leading-tight" style={{ fontFamily: 'var(--font-poppins)' }}>
                 Powering Your Technology
@@ -56,6 +56,7 @@ export default function Home() {
                   width={500} 
                   height={500} 
                   className="w-full h-auto object-cover"
+                  priority
                 />
               </div>
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-200/20 rounded-full blur-2xl -z-10"></div>
