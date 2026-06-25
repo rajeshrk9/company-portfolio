@@ -243,35 +243,47 @@ export default function Home() {
           <h2 className="text-5xl font-bold text-gray-900 mb-4 text-center" style={{ fontFamily: 'var(--font-poppins)' }}>Get In Touch</h2>
           <p className="text-center text-gray-600 text-lg mb-16">We&apos;d love to help with your IT needs</p>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Contact Card 1 */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Contact Card 1 - Company Owner */}
             <div className="bg-white/80 backdrop-blur-sm p-8 rounded-xl text-center hover:shadow-lg transition-all duration-300 border border-blue-100">
               <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-50 rounded-lg flex items-center justify-center mx-auto mb-4 border border-blue-200">
                 <Phone className="w-8 h-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2" style={{ fontFamily: 'var(--font-poppins)' }}>Phone</h3>
-              <p className="text-gray-600">Contact us for immediate assistance</p>
-              <p className="text-blue-600 font-bold mt-4 text-lg">+977 9819083222</p>
+              <h3 className="text-lg font-bold text-gray-900 mb-1" style={{ fontFamily: 'var(--font-poppins)' }}>Company Owner</h3>
+              <p className="text-gray-700 font-semibold mb-3">Ram Yadav</p>
+              <p className="text-gray-600 text-sm mb-3">For business inquiries</p>
+              <p className="text-blue-600 font-bold text-lg">+977 9852066068</p>
             </div>
 
-            {/* Contact Card 2 */}
+            {/* Contact Card 2 - Technical Assistant */}
+            <div className="bg-white/80 backdrop-blur-sm p-8 rounded-xl text-center hover:shadow-lg transition-all duration-300 border border-purple-100">
+              <div className="w-16 h-16 bg-gradient-to-br from-purple-100 to-purple-50 rounded-lg flex items-center justify-center mx-auto mb-4 border border-purple-200">
+                <Phone className="w-8 h-8 text-purple-600" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-1" style={{ fontFamily: 'var(--font-poppins)' }}>Technical Assistant</h3>
+              <p className="text-gray-700 font-semibold mb-3">Rajesh Khadka</p>
+              <p className="text-gray-600 text-sm mb-3">For technical support</p>
+              <p className="text-purple-600 font-bold text-lg">+977 9819083222</p>
+            </div>
+
+            {/* Contact Card 3 - Email */}
             <div className="bg-white/80 backdrop-blur-sm p-8 rounded-xl text-center hover:shadow-lg transition-all duration-300 border border-emerald-100">
               <div className="w-16 h-16 bg-gradient-to-br from-emerald-100 to-emerald-50 rounded-lg flex items-center justify-center mx-auto mb-4 border border-emerald-200">
                 <Mail className="w-8 h-8 text-emerald-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2" style={{ fontFamily: 'var(--font-poppins)' }}>Email</h3>
               <p className="text-gray-600">Drop us a message anytime</p>
-              <p className="text-emerald-600 font-bold mt-4 text-lg">kabitatrade@gmail.com</p>
+              <p className="text-emerald-600 font-bold mt-4 text-lg">kabitatradecenter@gmail.com</p>
             </div>
 
-            {/* Contact Card 3 */}
+            {/* Contact Card 4 - Location */}
             <div className="bg-white/80 backdrop-blur-sm p-8 rounded-xl text-center hover:shadow-lg transition-all duration-300 border border-amber-100">
               <div className="w-16 h-16 bg-gradient-to-br from-amber-100 to-amber-50 rounded-lg flex items-center justify-center mx-auto mb-4 border border-amber-200">
                 <MapPin className="w-8 h-8 text-amber-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2" style={{ fontFamily: 'var(--font-poppins)' }}>Location</h3>
               <p className="text-gray-600">Visit us at our office</p>
-              <p className="text-amber-600 font-bold mt-4 text-lg">Biratnagar</p>
+              <p className="text-amber-600 font-bold mt-4 text-lg">Sahid Stadium front area, Biratnagar</p>
             </div>
           </div>
         </div>
